@@ -1,0 +1,25 @@
+/*body{
+    background: paleturquoise;
+
+} */
+ header{
+    background-image: url(../images/annie-spratt-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+ }
+
+ /* ============ HOME ================ */
+.home {
+    background-color: paleturquoise;
+}
+.content-wrapper {
+    background-color: beige;
+    opacity: 0.9;
+}
+.btn {
+    background-color: beige;
+}
+footer {
+    background-color: blueviolet;
+}
