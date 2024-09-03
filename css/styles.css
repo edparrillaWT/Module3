@@ -1,25 +1,37 @@
-/*body{
-    background: paleturquoise;
 
-} */
  header{
-    background-image: url(../images/annie-spratt-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
+    background-color: aqua;
+    opacity: 100%;
  }
+
 
  /* ============ HOME ================ */
 .home {
-    background-color: paleturquoise;
+    /* background-color: paleturquoise; */
+    background-image: url(../images/annie-spratt-unsplash.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
-.content-wrapper {
-    background-color: beige;
-    opacity: 0.9;
+
+.home .content-wrapper {
+    background-color: rgb(255 255 255 / 0.9);
 }
+
 .btn {
-    background-color: beige;
+    background-color: orange;
 }
+
+/* ==== FOOTER =-======== */
 footer {
-    background-color: blueviolet;
+    background-color: #222;
+    color: #d3d4d6;
+}
+
+a {
+    color: #3c8453;
+}
+
+a:hover {
+    color: #bcaa95;
+    text-decoration: none;
 }
