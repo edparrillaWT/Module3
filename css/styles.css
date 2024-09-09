@@ -1,32 +1,42 @@
 
+/* 
+    https://www.paulirish.com/2012/box-sizin-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
  header{
-    background-color: aqua;
-    opacity: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #bbe4e9;
+ }
+ 
+ html, body {
+    height: 100%;
  }
 
+ body {
+    background: #f6f6f6;
+    margin: 0;
+ }
 
- /* ============ HOME ================ */
-.home {
-    /* background-color: paleturquoise; */
-    background-image: url(../images/annie-spratt-unsplash.jpg);
-    background-repeat: no-repeat; 
-    background-size: cover;
-}
+ .content-wrapper{
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+ }
 
-.home .content-wrapper {
-    background-color: rgb(255 255 255 / 0.9);
-}
-
+ 
 .btn {
     background-color: orange;
     font-size: 25px;
 }
 
-/* ==== FOOTER =-======== */
-footer {
-    background-color: #222;
-    color: #d3d4d6;
-}
 
 a {
     color: #3c8453;
@@ -36,3 +46,42 @@ a:hover {
     color: #bcaa95;
     text-decoration: none;
 }
+
+ /* ============ HOME ================ */
+.home {
+    /* background-color: paleturquoise; */
+    background-image: url(../images/annie-spratt-unsplash.jpg);
+    /* background-repeat: no-repeat;  */
+    background-size: cover;
+    /* height: 100%; */
+}
+
+.home header::before{
+    background: url(../images/joanna-kosinska-unsplash.jpg) top / cover;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 200px;
+}
+.home .content-wrapper {
+    background-color: rgb(255 255 255 / 0.9);
+}
+
+/* ==== FOOTER =-======== */
+footer {
+    background-color: #222;
+    color: #d3d4d6;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+}
+.socials img {
+    width: 32px;
+}
+
+/* === End Footer */
